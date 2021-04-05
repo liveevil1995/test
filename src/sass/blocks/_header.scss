@@ -1,0 +1,42 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.132586);
+    &__logo {
+        z-index: 10;
+    }
+    &__block {
+        position: relative;
+        padding-top: 11px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 5;
+    }
+    &__nav {
+        width: 691px;
+        margin: 0 101px 0 109px;
+        .hamburger {
+            display: none;
+        }
+    }
+    &__purchases {
+        z-index: 2;
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        svg {
+            cursor: pointer;
+            &:hover {
+                fill: #F08B98;
+            }
+        }
+        .hidden {
+            display: block;
+        }
+    }
+}

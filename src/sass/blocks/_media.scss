@@ -1,0 +1,123 @@
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .main {
+        padding-top: 38%;
+        background: url('../img/bg/Bitmap.png') no-repeat 50%/cover;
+        video {
+            display: none;
+        }
+        .grid {
+            img {
+                display: none;
+            }
+        }
+    }
+    .main__title {
+        font-size: 32px;
+    }
+    .header {
+        background: none;
+        box-shadow: none;
+        &__block {
+            display: flex;
+        }
+        &__logo {
+            margin: 0 auto;
+            z-index: 37;
+        }
+        &__nav {
+            width: 0;
+            margin: 0;
+            .hamburger {
+                display: block;
+                position: absolute;
+                top: 17px;
+                left: 10px;
+            }
+        }
+        &__purchases {
+            z-index: 28;
+            width: auto;
+            .hidden {
+                display: none;
+            }
+            &-link {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 37;
+            }
+        }
+    }
+    .menu {
+        padding: 20px;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 15;
+        background-color: #fff;
+        transition: 0.6s all;
+        &_active {
+            left: 0;
+        }
+        &__item {
+            margin-top: 40px;
+        }
+        &__close {
+            display: block;
+            position: absolute;
+            top: -5px;
+            left: 8px;
+            font-size: 30px;
+        }
+    }
+    .hamburger {
+        display: block;
+    }
+    .button {
+        z-index: -1;
+    }
+    .catalog {
+        padding: 24px 32px 21px 32px;
+        height: 165px;
+        width: 300px;
+        z-index: -1;
+        overflow-y: scroll;
+        &__items {
+            flex-wrap: wrap;
+        }
+        &__title {
+            max-width: auto;
+            font-size: 22px;
+        }
+    }
+    .modal {
+        padding: 20px 10px 30px 20px;
+        width: 320px;
+        .simplebar-track {
+            right: 5px;
+        }
+    }
+    .form {
+        &__input {
+            width: 281px;
+            &_little {
+                width: 195px;
+            }
+        }
+        &__textarea {
+            width: 281px;
+        }
+        &__text {
+            width: 250px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.menu {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 0;
+    &__link {
+        position: relative;
+        font-size: 16px;
+        color: #000000;
+        transition: 0.5s all;
+    }
+    a {
+        &:hover {
+            text-decoration: none;
+            color: #F08B98;
+        }
+    }
+    &__close {
+        display: none;
+    }
+}
+
+
+
+

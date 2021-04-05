@@ -1,0 +1,26 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+
+
+* {
+    font-family: 'MuseoSansCyrl', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+@import 'blocks/main';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/buttons';
+@import 'blocks/catalog';
+@import 'blocks/form';
+@import 'blocks/modal';
+
+@import 'blocks/media'
